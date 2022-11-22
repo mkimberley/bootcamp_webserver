@@ -9,6 +9,7 @@ WORKDIR /app
 
 # Build the Go app
 RUN go get github.com/mkimberley/bootcamp_websever
+RUN go get github.com/gin-gonic/gin
 RUN go build -o main .
 
 # Expose port 8080 to the outside world
